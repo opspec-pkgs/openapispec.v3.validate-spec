@@ -23,7 +23,7 @@ run:
          pkg: { ref: github.com/opspec-pkgs/docker.image.build#2.0.0 }
          inputs:
            dockerfile: $(/Dockerfile)
-           imageName: 'opspecpkgs/openapispec.v3.definition.validate:$(version)'
+           imageName: 'opspecpkgs/openapispec.v3.validate-spec:$(version)'
          outputs: { imageTar }
      - op:
          pkg: { ref: github.com/opspec-pkgs/_.pkg.generate-readme#1.0.1 }

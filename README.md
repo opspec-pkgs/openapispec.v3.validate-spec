@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/openapispec.v3.definition.validate.svg?branch=master)](https://travis-ci.org/opspec-pkgs/openapispec.v3.definition.validate)
+[![Build Status](https://travis-ci.org/opspec-pkgs/openapispec.v3.validate-spec.svg?branch=master)](https://travis-ci.org/opspec-pkgs/openapispec.v3.validate-spec)
 
 # Problem statement
 
-validate a v3 open api spec definition
+validate a v3 open api spec
 
 # Format
 
@@ -13,22 +13,22 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/openapispec.v3.definition.validate#1.0.0
+opctl pkg install github.com/opspec-pkgs/openapispec.v3.validate-spec#1.0.0
 ```
 
 ## run
 
 ```
-opctl run github.com/opspec-pkgs/openapispec.v3.definition.validate#1.0.0
+opctl run github.com/opspec-pkgs/openapispec.v3.validate-spec#1.0.0
 ```
 
 ## compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/openapispec.v3.definition.validate#1.0.0 }
+  pkg: { ref: github.com/opspec-pkgs/openapispec.v3.validate-spec#1.0.0 }
   inputs:
-    definition:
+    spec:
   outputs:
 ```
 
@@ -37,7 +37,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://github.com/opspec-pkgs/openapispec.v3.definition.validate/issues)
+[open an issue](https://github.com/opspec-pkgs/openapispec.v3.validate-spec/issues)
 
 # Releases
 

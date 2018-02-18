@@ -42,7 +42,7 @@ run:
         pkg: { ref: github.com/opspec-pkgs/docker.image.push#2.0.0 }
         inputs:
           imageTar:
-          imageName: 'opspecpkgs/openapispec.v3.definition.validate:$(version)'
+          imageName: 'opspecpkgs/openapispec.v3.validate-spec:$(version)'
           username: $(dockerUsername)
           password: $(dockerPassword)
     - op:
@@ -53,7 +53,7 @@ run:
         pkg: { ref: github.com/opspec-pkgs/github.release.create#1.0.0 }
         inputs:
           owner: opspec-pkgs
-          repo: openapispec.v3.definition.validate
+          repo: openapispec.v3.validate-spec
           loginUsername: $(githubUsername)
           loginPassword: $(githubPassword)
           tag: $(version)
