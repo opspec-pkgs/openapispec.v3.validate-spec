@@ -1,0 +1,15 @@
+name: github.com/opspec-pkgs/openapispec.v3.definition.validate
+description: validate a v3 open api spec definition
+inputs:
+  definition:
+    file:
+      description: the definition to validate
+icon: /icon.svg
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'opspecpkgs/openapispec.v3.definition.validate:1.0.0' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /definition: $(definition)
