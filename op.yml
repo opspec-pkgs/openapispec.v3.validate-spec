@@ -4,7 +4,6 @@ inputs:
   spec:
     file:
       description: the spec to validate
-icon: /icon.svg
 version: 1.0.0
 run:
   container:
